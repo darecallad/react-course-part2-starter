@@ -5,10 +5,10 @@ import axios from "axios";
 
 const TodoForm = () => {
   const queryClient = useQueryClient();
-  const addTodo = useMutation<Todo[], Error, Todo>({
+  const addTodo = useMutation<Todo, Error, Todo>({
     mutationFn: (todo: Todo) =>
       axios
-        .post<Todo[]>("https://jsonplaceholder.typicode.com/todos", todo)
+        .post<Todo>("https://jsonplaceholder.typicode.com/todos", todo)
         .then((res) => res.data),
 
     onSuccess: (savedTodo, newTodo) => {
