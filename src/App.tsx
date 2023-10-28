@@ -1,8 +1,8 @@
 import "./App.css";
-import LogProvider from "./LogProvider";
+import { LogProvider } from "./auth";
 import HomePage from "./state-management/HomePage";
 import NavBar from "./state-management/NavBar";
-import TaskProvider from "./taskProvider";
+import { TaskProvider } from "./tasks";
 
 function App() {
   return (

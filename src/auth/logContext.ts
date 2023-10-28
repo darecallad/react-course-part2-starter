@@ -1,5 +1,5 @@
 import { Dispatch } from "react";
-import { LogAction } from "../reducer/logReducer";
+import { LogAction } from "./LogProvider";
 import React from "react";
 
 interface LogContextType {
